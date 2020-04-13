@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+
+body{
+    background-color: #FFD3CE;
+}
+
+.container{
+    width: 600px;
+    margin: 15% auto;
+    background-color: #FFBAB2;
+    color: #A37772;
+    border-radius: 25px;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+
+.countdown{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.digit{
+    font-size: 70px;
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 25px;
+}
+
+a{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    color: #A37772;
+}
