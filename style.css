@@ -11,7 +11,9 @@ body{
 
 .container{
     width: 600px;
-    margin: 15% auto;
+    position: absolute;
+    top: calc(50% - 104px);
+    left: calc(50% - 300px);
     background-color: #FFBAB2;
     color: #A37772;
     border-radius: 25px;

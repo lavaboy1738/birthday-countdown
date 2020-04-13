@@ -1,6 +1,9 @@
 const digits = document.querySelectorAll(".digit")
-const thisYear = new Date().getFullYear();
-const birthday = new Date(`July 10, ${thisYear} 00:00:00`);
+const checkDate = new Date()
+const thisYear = checkDate.getFullYear();
+let birthday = new Date(`July 10, ${thisYear} 00:00:00`);
+
+checkDate > birthday? birthday = new Date(`July 10, ${thisYear+1} 00:00:00`) : null
 
 function refresh(){
     let today = new Date();
