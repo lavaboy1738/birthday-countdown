@@ -49,4 +49,21 @@ a{
     bottom: 10px;
     text-decoration: none;
     color: #A37772;
+    transition: 0.3s all ease;
+}
+
+a:hover{
+    transform: scale(1.1);
+    background-color: #FFBAB2;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+h2{
+    display: none;
+    color: #A37772;
+    position: absolute;
+    font-size: 100px;
+    top: calc(50% - 60px);
+    left: calc(50% - 400px);
 }

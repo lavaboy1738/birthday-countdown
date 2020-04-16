@@ -1,6 +1,8 @@
 const digits = document.querySelectorAll(".digit")
 const checkDate = new Date()
 const thisYear = checkDate.getFullYear();
+const message = document.querySelector("h2")
+const container = document.querySelector(".container")
 let birthday = new Date(`July 10, ${thisYear} 00:00:00`);
 
 checkDate > birthday? birthday = new Date(`July 10, ${thisYear+1} 00:00:00`) : null
@@ -29,4 +31,15 @@ function refresh(){
     })
 }
 
-setInterval(refresh, 1000)
+function checkBirthday(){
+    const today = [checkDate.getMonth(), checkDate.getDate()];
+    const birthdayArr = [birthday.getMonth(), checkDate.getDate()];
+    if(today.join(" ")===birthdayArr.join(" ")){
+        message.style.display = "unset";
+        container.style.display = "none";
+    }else{
+        setInterval(refresh, 1000)
+    }
+}
+
+checkBirthday()
