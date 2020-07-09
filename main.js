@@ -33,7 +33,9 @@ function refresh(){
 
 function checkBirthday(){
     const today = [checkDate.getMonth(), checkDate.getDate()];
-    const birthdayArr = [birthday.getMonth(), checkDate.getDate()];
+    console.log(today);
+    const birthdayArr = [birthday.getMonth(), birthday.getDate()];
+    console.log(birthdayArr)
     if(today.join(" ")===birthdayArr.join(" ")){
         message.style.display = "unset";
         container.style.display = "none";
